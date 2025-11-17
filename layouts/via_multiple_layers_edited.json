@@ -52,7 +52,7 @@
       "KC_NO",
       "KC_DEL",
       "MACRO(0)",
-      "KC_A",
+      "LT(3,KC_A",
       "MT(MOD_LSFT,KC_S)",
       "MT(MOD_LCTL,KC_D)",
       "LT(1,KC_F)",
