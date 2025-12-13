@@ -71,20 +71,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     return true;
 }
 
-// Per-key tapping term configuration
-uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
-    switch (keycode) {
-        case KC_SPC:  // Space key gets 150ms
-            return 150;
-        // Add more keys here as needed:
-        // case KC_A:
-        // case KC_S:
-        //     return 150;
-        default:
-            return TAPPING_TERM;  // 100ms for all other keys
-    }
-}
-
 void housekeeping_task_user(void) {
     if (IS_LAYER_ON(_MAC) || IS_LAYER_ON(_MAC_FN)) {
       gpio_write_pin_low(LED_MAC_PIN);

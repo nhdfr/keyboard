@@ -39,7 +39,6 @@ enum custom_keycodes {
 
 bool fn_mode = false;
 
-// JK to ESC combo using QMK's built-in combo system
 enum combo_events {
     JK_ESC,
 };
@@ -79,15 +78,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     }
 
     return true;
-}
-
-uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
-    switch (keycode) {
-        case LT(3, KC_A):
-            return 150;
-        default:
-            return TAPPING_TERM;
-    }
 }
 
 void housekeeping_task_user(void) {
