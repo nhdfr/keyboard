@@ -31,6 +31,6 @@
 #define RGB_MATRIX_DEFAULT_SAT 255
 
 /* Home Row Mods */
-#define TAPPING_TERM 100  // Default tapping term for all keys
+#define TAPPING_TERM 120  // Default tapping term for all keys
 #define TAPPING_TERM_PER_KEY  // Enable per-key tapping term
 #define PERMISSIVE_HOLD
