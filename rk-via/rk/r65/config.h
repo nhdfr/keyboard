@@ -1,6 +1,3 @@
-// Copyright 2024 DV (@iamdanielv)
-// SPDX-License-Identifier: GPL-2.0-or-later
-
 #pragma once
 
 #define LED_WIN_LOCK_PIN B10
@@ -31,6 +28,6 @@
 #define RGB_MATRIX_DEFAULT_SAT 255
 
 /* Home Row Mods */
-#define TAPPING_TERM 120  // Default tapping term for all keys
-#define TAPPING_TERM_PER_KEY  // Enable per-key tapping term
+#define TAPPING_TERM 115
+#define TAPPING_TERM_PER_KEY
 #define PERMISSIVE_HOLD

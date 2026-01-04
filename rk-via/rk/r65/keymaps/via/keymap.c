@@ -62,7 +62,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         return false;
     }
 
-    // Your existing fn_mode handling
     if (fn_mode) {
         if ( ( keycode >= KC_1 && keycode <= KC_0 ) || keycode == KC_MINS || keycode == KC_EQL ) {
             uint8_t index = keycode - KC_1;
